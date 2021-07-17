@@ -10,6 +10,7 @@ We were tasked by the an employee of the Colorado Board of Elections to audit a 
 
 ## Resources
 Data Source: election_results.csv
+
 Software used: Python 3.8.8, Virtual Studio Code Version: 1.57.0
 
 ## Summary
