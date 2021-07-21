@@ -35,7 +35,7 @@ winning_percentage = 0
 # Track the largest county (highest count), county voter turnout (county count/ county largest *100)
 county_largest= ""
 county_count= 0
-county_percentage= 0
+winning_county_percentage= 0
 
 # Declare county list and dictionary 
 # Open the election results and read the file
@@ -98,8 +98,9 @@ with open (file_to_save, "w") as txt_file:
         print (county_results, end = "")
         # Save county results to text file
         txt_file.write(county_results)
-        # # Determine winning county/ largest turnout
-        # if (votescounty > county_count):
+        # Determine winning county/ largest turnout
+        if (votescounty > county_count) and (county_percentage > winning_county_percentage):
+            county_largest= county_name
 
     county_largest_summary = (
         f"\n-------------------------\n"
