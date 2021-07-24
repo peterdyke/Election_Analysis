@@ -14,7 +14,8 @@ Data Source: election_results.csv
 Software used: Python 3.8.8, Virtual Studio Code Version: 1.57.0
 
 ## Summary
+Using Python we were able to write a script that will allow the Election Commission to use this script in future elections to determine the number of votes cast overall, in each county, and for each candidate. Results are below.
 
-## Challenge Overview
+## Challenge Results
 
 ## Challenge Summary

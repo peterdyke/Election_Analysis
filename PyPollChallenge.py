@@ -99,12 +99,13 @@ with open (file_to_save, "w") as txt_file:
         # Save county results to text file
         txt_file.write(county_results)
         # Determine winning county/ largest turnout
-        if (votescounty > county_count) and (county_percentage > winning_county_percentage):
+        if (votescounty > county_count):
+            county_count = votescounty
             county_largest= county_name
 
     county_largest_summary = (
         f"\n-------------------------\n"
-        f"Largest County Turnout: Denver\n"
+        f"Largest County Turnout: {county_largest} \n"
         f"-------------------------\n")
     print (county_largest_summary)
     txt_file.write (county_largest_summary)
